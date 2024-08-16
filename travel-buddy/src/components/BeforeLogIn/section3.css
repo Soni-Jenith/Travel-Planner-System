@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+
+/* start */
+#section3{
+    height: fit-content;
+}
+.gride_con{
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    gap: 40px;
+}
+.columns{
+
+    height: max-content;
+    width: 200px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+.columns:nth-child(2){
+    margin-top: 60px;
+}
+.columns:nth-child(3){
+    margin-top: 20px;
+}
+/* set for all the img and item */
+.item{
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition:transform 0.4s;
+    cursor: pointer;
+}
+/* Use for Set text part in */
+.columns:nth-child(1) .item:nth-child(1){
+    align-items: flex-start;
+    font-size: 2.5rem;
+    padding-left: 20px;
+    cursor: default;
+}
+/* text button*/
+.columns:nth-child(1) .item:nth-child(1) button{
+    outline: 0;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    padding: 10px 35px;
+    border-radius: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: transform .2s;
+    text-wrap: nowrap;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+.columns:nth-child(1) .item:nth-child(1):hover{
+    transform: scale(1);
+}
+
+/* set bg img */
+.item :nth-child(1){
+    height: 100%;
+    width: auto;
+}
+/* set texture  on img */
+.item :nth-child(2){
+    height: 80%;
+    position: absolute;
+    z-index: 1;
+}
+.item:hover{
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 850px) {
+    .gride_con{gap: 20px;}
+    .columns{gap: 20px;}
+}
+@media only screen and (max-width: 760px) {
+    .gride_con{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .columns{
+        margin: 0;
+    }
+    .columns:nth-child(2){
+        margin-top: 60px;
+    }
+    .columns:nth-child(3){
+        margin-top:0px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row; 
+    }
+    /* set 3-1 */
+    .columns:nth-child(3) .item:nth-child(1){
+        margin-top: -50px;
+    }
+    /* text - part */
+    .columns:nth-child(1) .item:nth-child(1){
+        font-size: 1.8rem;
+    }
+    /* text - button */
+    .columns:nth-child(1) .item:nth-child(1) button{
+        font-size: 1rem;
+    }
+    
+}
+@media only screen and (max-width: 530px) {
+    .item{
+        height: 250px;
+        width: 150px;
+    }
+    .gride_con{
+        padding: 0px;
+        margin: 0px;
+        justify-content: center;
+    }
+    .columns:nth-child(3){
+        justify-content: space-evenly;
+    }
+    .columns:nth-child(1) .item:nth-child(1){
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .gride_con{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding:20px 0px 20px 0px;
+    }
+    /* Set columns 1 and 2 and 3 */
+    .columns:nth-child(2),.columns:nth-child(1),.columns:nth-child(3){
+        margin-top:0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-direction: row; 
+    }
+    /* set 3-1 */
+    .columns:nth-child(3) .item:nth-child(1){
+        margin-top: 0px;
+    }
+       /* text - part */
+       .columns:nth-child(1) .item:nth-child(1){
+        font-size: 1.5rem;
+    }
+    /* text - button */
+    .columns:nth-child(1) .item:nth-child(1) button{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .columns:nth-child(2),.columns:nth-child(1),.columns:nth-child(3){
+        gap: 10px;
+    }
+    .gride_con{
+        gap: 15px;
+    }
+}

@@ -1,12 +1,10 @@
 
 import './App.css';
+import Section3 from './components/BeforeLogIn/section3.js'
 
 function App() {
   return (
-    <div className="App">
-<h1>test</h1>
-  
-    </div>
+    <Section3></Section3>
   );
 }
 
