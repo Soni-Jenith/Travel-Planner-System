@@ -1,0 +1,110 @@
+.customiseTrip{
+    height: 120vh;
+    min-height: fit-content;
+    min-width: fit-content;
+    width: 100vw;
+    background-color:lightblue;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background: linear-gradient(to top,rgb(191, 164, 207),transparent);
+    /* background-color: rebeccapurple; */
+}
+.customiseTrip>h1{
+    color: #333;
+    height: 60px;
+    width: 300px;
+    font-size: 25px;
+    text-align: center;
+    font-family: monospace;
+    align-self: center;
+    line-height: 1.5em;
+}
+.customiseTrip h1 span{
+    white-space: nowrap;
+}
+.TripSteps{
+    height: 80%;
+    text-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    align-self: center;
+}
+.TripSteps p{
+    text-wrap: wrap;
+}
+
+.TripSteps .Step{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.TripSteps .Step{
+    height: 33%;
+    width: 100%;
+    gap: 25px;
+}
+.stepNumber{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #555;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform:rotate(45deg) skew(10deg,10deg);
+    background-color:rgb(216, 160, 213);
+    
+}
+.stepNumber h1{
+    transform: rotate(-45deg) skew(0deg);
+}
+.description{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.description h1{
+    text-align: center;
+    align-self: center;
+    font-family: monospace;
+    height: auto;
+    font-size: 25px;
+    padding: 5px;
+    background-color: rgb(223, 134, 217);
+}
+.description p{
+    text-align: center;
+    align-self: center;
+    font-family: monospace;
+    height: 35%;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    :root {
+        counter-reset: count;
+    }
+    
+    .description h1::before {
+        counter-increment: count;
+        content: counter(count) ". ";
+    }
+    .stepNumber{
+        display: none;
+    }
+  }
+@media only screen and (max-width: 400px) {
+    .description>h1{
+        font-size: 20px;
+    }
+    .description>p{
+        font-size: 16px;
+    }
+  }

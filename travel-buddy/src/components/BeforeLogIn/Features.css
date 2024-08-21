@@ -1,0 +1,107 @@
+#section2 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.Container {
+    height: 90%;
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: greenyellow;
+    border-radius: 20px;
+}
+
+.Container img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    z-index: 1;
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    z-index: 2;
+    scroll-snap-type: x mandatory;
+}
+
+.Heading {
+    position: absolute;
+    font-size: 3rem;
+    top: 0;
+    left: 15%;
+    
+    z-index: 1;
+    font-family: "Inknut", sans-serif;
+}
+
+.Content {
+    position: relative;
+    height: 100%;
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    scroll-snap-align: start;
+}
+
+.Content1 {
+     
+  }
+  
+  /*.Content2 {
+    background-color: #4ab19c6f;
+  }
+  
+  .Content3 {
+    background-color: #e94e77;
+  }
+  
+  .Content4 {
+    background-color: #6b5b95;
+  } */
+
+  .ContentBox {
+    height: 50%;
+    width: 50%;
+    position: relative;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px 0px rgba(152, 91, 50, 0.449);
+  }
+
+  .ContentBox h1 {
+    position: relative;
+    font-size: 3rem;
+  }
+
+  .ContentBox p {
+    font-size: 1.5rem;
+    position: relative;
+    text-align: center;
+  }

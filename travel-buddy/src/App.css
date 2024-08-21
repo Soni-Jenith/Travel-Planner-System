@@ -13,20 +13,7 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -36,3 +23,18 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+
+@font-face {
+  font-family: "Inknut";
+  src: url(../src/Assets/Fonts/InknutAntiqua-Regular.ttf);
+}
+
+
