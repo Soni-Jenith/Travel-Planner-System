@@ -23,12 +23,12 @@ const Features = () => {
       duration: 4,
     }
   });
-  tl.to(".Container", {
-    height: "100%",
-    width: "100%",
-    borderRadius: "0px",
-  })
-  .from(".Heading", {
+  // tl.to(".Container", {
+  //   height: "100%",
+  //   width: "100%",
+  //   borderRadius: "0px",
+  // })
+  tl.from(".Heading", {
     y: -200,
     ease: "power4.inOut"
   }, "<")
@@ -48,7 +48,7 @@ const Features = () => {
   return (
     <section id='section2'>
       <div className='Container'>
-        <img src={BackImage} alt='backimage' />
+        {/* <img src={BackImage} alt='backimage' /> */}
         <div className='slide'>
           <div className='Content1 Content'>
             <div className='ContentBox'>

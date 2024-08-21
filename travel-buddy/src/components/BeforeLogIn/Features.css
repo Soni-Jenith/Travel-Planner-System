@@ -10,15 +10,17 @@
 }
 
 .Container {
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     position: relative;
     overflow: hidden;
+    mix-blend-mode: overlay;
     /* display: flex;
     justify-content: center;
     align-items: center; */
-    background-color: greenyellow;
-    border-radius: 20px;
+    background: linear-gradient(#d6bbed,#725987 ,#533e65)
+    /* border-radius: 20px; */
+    
 }
 
 .Container img {
@@ -27,7 +29,7 @@
     width: 100%;
     object-fit: cover;
     top: 0;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .slide {
@@ -47,7 +49,6 @@
     font-size: 3rem;
     top: 0;
     left: 15%;
-    
     z-index: 1;
     font-family: "Inknut", sans-serif;
 }
@@ -63,21 +64,7 @@
     scroll-snap-align: start;
 }
 
-.Content1 {
-     
-  }
-  
-  /*.Content2 {
-    background-color: #4ab19c6f;
-  }
-  
-  .Content3 {
-    background-color: #e94e77;
-  }
-  
-  .Content4 {
-    background-color: #6b5b95;
-  } */
+
 
   .ContentBox {
     height: 50%;
