@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './App.css';
 import HomeSection from './components/BeforeLogIn/HomeSection';
 import Features from './components/BeforeLogIn/Features';
-import Section3 from './components/BeforeLogIn/Section3';
+import Places from './components/BeforeLogIn/Places';
 import Section4 from './components/BeforeLogIn/Section4';
 import CustomiseTrips from './components/BeforeLogIn/CustomiseTrips';
 import Footer from './components/BeforeLogIn/Footer';
@@ -19,13 +19,13 @@ function App() {
   return (
     
 
-    <body id='body' data-scroll-container>
+    <body id='body'>
 
       <HomeSection className="home section"/>
 
-      <Features data-scroll data-scroll-speed="4" />
+      <Features />
 
-      <Section3 />
+      <Places />
 
       <Section4 />
 

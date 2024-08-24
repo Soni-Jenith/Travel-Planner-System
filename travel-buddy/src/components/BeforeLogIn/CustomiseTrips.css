@@ -8,10 +8,17 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
-    background: linear-gradient(to top,rgb(191, 164, 207),transparent);
-    /* background-color: rebeccapurple; */
+    /* gap: 20px; */
+
 }
+
+.customiseTrip img {
+    position: absolute;
+    height: 120vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
 .customiseTrip>h1{
     color: #333;
     height: 60px;

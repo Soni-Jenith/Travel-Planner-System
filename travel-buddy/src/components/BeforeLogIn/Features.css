@@ -14,11 +14,10 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    mix-blend-mode: overlay;
     /* display: flex;
     justify-content: center;
     align-items: center; */
-    background: linear-gradient(#d6bbed,#725987 ,#533e65)
+    background: linear-gradient(#d6bbed,#725987 ,#c8bad5)
     /* border-radius: 20px; */
     
 }
@@ -73,7 +72,7 @@
     background-color: transparent;
     backdrop-filter: blur(10px);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     padding: 30px;
@@ -82,12 +81,41 @@
     box-shadow: 0px 0px 50px 0px rgba(152, 91, 50, 0.449);
   }
 
-  .ContentBox h1 {
+  .ContentBox .PicPart {
     position: relative;
-    font-size: 3rem;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .ContentBox p {
+  .ContentBox .PicPart img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .ContentBox .TextPart {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .ContentBox .TextPart h1 {
+    position: relative;
+    font-size: 1.8rem;
+    text-wrap: nowrap;
+  }
+
+  .ContentBox .TextPart p {
     font-size: 1.5rem;
     position: relative;
     text-align: center;
