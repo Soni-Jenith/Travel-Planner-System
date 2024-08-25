@@ -3,7 +3,28 @@
     position: relative;
     overflow: hidden;
     /* width: 100vw; */
+    background: rosybrown;
+    background: linear-gradient(to bottom,#221f1a,#79cff1);
 }
+.top_overlay_section3{
+    position: absolute;
+    top: 0;
+    height: 180px;
+    width: 100%;
+    background: red;
+    background: linear-gradient(to bottom,#221f1a,#ffffff00 50%);
+}
+
+.bottom_overlay_section3{
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    background: red;
+    background: linear-gradient(to top,#76c5ea,#ffffff00 50%);
+}
+
+
 
 #background {
     position: absolute;

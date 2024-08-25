@@ -15,7 +15,16 @@
     justify-content: center;
     align-items: center;
 }
-
+/* #e9ceb0 */
+.bottm_overlay{
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    background: red;
+    background:linear-gradient(to top,#a3b8bf,rgba(0, 0, 0, 0));
+    /* background:linear-gradient(to top,#a896c8 40%,rgba(0, 0, 0, 0)); */
+}
 #HomeImage {
     position: absolute;
     height: 100vh;

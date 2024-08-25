@@ -13,7 +13,14 @@
     position: absolute;
     object-fit: cover;
 }
-
+.top_overlay_section4{
+    position: absolute;
+    top: 0;
+    height: 180px;
+    width: 100%;
+    background: red;
+    background: linear-gradient(to bottom,#76c5ea,#ffffff00 50%);
+}
 .heading {
     position: absolute;
     top: 5%;

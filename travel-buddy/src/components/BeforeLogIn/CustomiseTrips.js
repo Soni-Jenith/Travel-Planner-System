@@ -1,12 +1,14 @@
 import React from "react";
 import "./CustomiseTrips.css";
-import background from '../../Assets/Section 5/pexels-photo-1450340.png'
+// import background from '../../Assets/Section 5/pexels-photo-1450340.png'
+import background from '../../Assets/Section 3/background.png'
 
 function CustomiseTrips() {
   return (
     <>
       <div className="customiseTrip">
         <img src={background} alt="background" />
+        
         <h1>
           <u>Customise <span>your trip with us</span></u>
         </h1>

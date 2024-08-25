@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import BackImage from "../../Assets/Features Section/pexels-photo-1261728.png";
+// import BackImage from "../../Assets/Section 3/background.png";
 import illustration1 from "../../Assets/Features Section/illustration1.png";
 import illustration3 from "../../Assets/Features Section/illustration3.png";
 import illustration4 from "../../Assets/Features Section/illustration4.png";
@@ -59,7 +60,9 @@ const Features = () => {
   return (
     <section id="section2">
       <div className="Container">
-        <img src={BackImage} alt="backimage" />
+        <img src={BackImage} alt="backimage" id="section_2_back_img" />
+        <div className="top_overlay_section2"></div>
+        <div className="bottom_overlay_section2"></div>
         <div className="slide">
           <div className="Content1 Content">
             <div className="ContentBox">

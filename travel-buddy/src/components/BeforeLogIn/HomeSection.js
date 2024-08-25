@@ -54,6 +54,7 @@ const HomeSection = () => {
           <section id='section1' className='Home' data-scroll>
               <Navbar />
               <video src={video} id='Homevideo' alt='HomeSection' data-scroll data-scroll-speed="-3"  autoPlay muted loop></video>
+              <div className="bottm_overlay"></div>
           </section>
 
     </div>

@@ -7,6 +7,7 @@ const Section4 = () => {
   return (
     <section id="section4">
     <img src={background}/>
+    <div className="top_overlay_section4"></div>
     <div className='heading'>Why TravelBuddy</div>
         <div className='TextContainer'>
             <p>TravelBuddy isn't just a travel-planner- It's your gateway to extraordinary experiences. Our platform is built for travelers, by travelers, ensuring that every aspect of your journey is covered, from the initial idea to the last detail. With a vast selection of destinations, tailored suggestions, and a seamless planning process, we make travel accessible and exciting.</p>

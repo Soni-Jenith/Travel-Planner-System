@@ -12,7 +12,12 @@ import background from '../../Assets/Section 3/background.png'
 const section3 = () => {
   return (
     <section id="section3">
-        <img src={background} id='background'/>
+        {/* <img src={background} id='background'/> */}
+        <div className="top_overlay_section3"></div>
+        <div className="bottom_overlay_section3"></div>
+
+
+        
         <div className="gride_con">
             <div className="columns">
                 <div className="item">

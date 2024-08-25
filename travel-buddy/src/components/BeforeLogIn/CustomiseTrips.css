@@ -11,12 +11,12 @@
     /* gap: 20px; */
 
 }
-
 .customiseTrip img {
     position: absolute;
     height: 120vh;
     width: 100vw;
     object-fit: cover;
+    transform: rotate(180deg);
 }
 
 .customiseTrip>h1{
