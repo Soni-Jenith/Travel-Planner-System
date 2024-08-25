@@ -6,7 +6,7 @@ import HomeSection from './components/BeforeLogIn/HomeSection';
 import Features from './components/BeforeLogIn/Features';
 import Places from './components/BeforeLogIn/Places';
 import Section4 from './components/BeforeLogIn/Section4';
-import CustomiseTrips from './components/BeforeLogIn/CustomiseTrips';
+import Section5 from './components/BeforeLogIn/Section5';
 import Footer from './components/BeforeLogIn/Footer';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -29,7 +29,7 @@ function App() {
 
       <Section4 />
 
-      <CustomiseTrips/>
+      <Section5/>
       
       <Footer/>
       

@@ -6,7 +6,7 @@ import  historic from '../../Assets/Section 3/historic.png';
 import  adventure from '../../Assets/Section 3/hot-air-balloons-4561267_1280.png';
 import  mountain from '../../Assets/Section 3/mountain.png';
 import  nature from '../../Assets/Section 3/pexels-photo-1152359.png';
-import background from '../../Assets/Section 3/background.png'
+
 
 
 const section3 = () => {
