@@ -1,10 +1,11 @@
 import React from 'react';
-import './Section5.css';
+import './CssFiles/Section5.css';
 import Background from '../../Assets/Section 5/background.png';
 
 const Section5 = () => {
   return (
     <section id='section5'>
+        
     <img src={Background} alt="Background_section_5" />
     {/* 1 */}
     <div className="trip_steps_con">

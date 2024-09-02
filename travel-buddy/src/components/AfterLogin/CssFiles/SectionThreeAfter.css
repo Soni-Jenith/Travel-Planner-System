@@ -1,0 +1,77 @@
+#SectionThreeAfter {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(225, 217, 207);
+}
+
+
+.MainContainer {
+    height: 75%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.SubContainer1 {
+    position: relative;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.SubContainer2 {
+    position: relative;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.SubContainer1 .SubSubContainer1 {
+    position: relative;
+    height: 100%;
+    width: 60%;
+}
+
+.SubContainer1 .SubSubContainer2 {
+    position: relative;
+    height: 100%;
+    width: 40%;
+   
+}
+
+.SubContainer2 .SubSubContainer3, .SubContainer2 .SubSubContainer4, .SubContainer2 .SubSubContainer5 {
+    position: relative;
+    height: 100%;
+    width: 34%;
+}
+
+.Sub img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+

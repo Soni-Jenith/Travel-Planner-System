@@ -1,0 +1,67 @@
+#navbarAfter {
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 200px;
+    font-family: "Inknut",sans-serif;
+    z-index: 4;
+}
+
+.logoooo {
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+
+#logoAfter {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.nav-links {
+    width: fit-content;
+    gap: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    
+}
+
+.profileContainer {
+    width: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px; 
+}
+
+.profileContainer #usericon {
+    position: relative;
+    object-fit: contain;
+    height: 5%;
+    width: 5%;
+}
+
+.profileContainer #UserNameNavbar {
+    position: relative;
+    font-family: "Inknut",sans-serif;
+    font-size: 1rem;
+}
+

@@ -1,5 +1,5 @@
 import React from 'react'
-import './Section4.css';
+import './CssFiles/Section4.css';
 import image from '../../Assets/Section 4/image.png';
 import background from '../../Assets/Section 4/pexels-photo-3278215.png'
 

@@ -1,0 +1,59 @@
+#SectionTwoAfter {
+    position: relative;
+    height: fit-content;
+    min-height: 50vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sec2Container1 {
+    padding: 15px 30px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section2Heading {
+    position: relative;
+    text-align: left;
+    font-size: 2rem;
+    font-family: "Inknut",sans-serif;
+    font-weight: bolder;
+}
+
+.sec2Container1 a {
+    position: relative;
+    padding: 8px 50px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: #8682bf;
+    font-family: "Inknut",sans-serif;
+}
+
+.sec2Container2 {
+    position: relative;
+    height: fit-content;
+    min-height: 30vh;
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Temp_Text {
+    position: relative;
+    font-size: 1.2rem;
+    font-family: "Inknut",sans-serif;
+}
+
+.Temp_Text a {
+    color: #8682bf;
+    text-decoration: none;
+}

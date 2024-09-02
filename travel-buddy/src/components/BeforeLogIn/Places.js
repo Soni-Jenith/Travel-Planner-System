@@ -1,5 +1,5 @@
 import React from 'react';
-import './Places.css';
+import './CssFiles/Places.css';
 import diamond from '../../Assets/Section 3/test_img_on_img.png';
 import  beach from '../../Assets/Section 3/beach.png';
 import  historic from '../../Assets/Section 3/historic.png';

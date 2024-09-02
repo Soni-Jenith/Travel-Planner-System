@@ -1,5 +1,5 @@
 import React from "react";
-import "./Features.css";
+import "./CssFiles/Features.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -21,7 +21,7 @@ const Features = () => {
         end: "bottom -100%",
         pin: "#section2",
         scrub: 1,
-        markers: true,
+        // markers: true,
         duration: 4,
       },
     });
@@ -47,6 +47,7 @@ const Features = () => {
         },
         ">"
       )
+      
       .to(
         ".Heading",
         {
@@ -55,7 +56,14 @@ const Features = () => {
         },
         ">"
       );
+
+      
+      
+      
+      
   });
+
+  
 
   return (
     <section id="section2">
@@ -70,7 +78,7 @@ const Features = () => {
                 <img src={illustration1} />
               </div>
               <div className="TextPart">
-                <h1>Tailored Trip Suggestions</h1>
+                <h1 className="head1">Tailored Trip Suggestions</h1>
                 <p>
                   Whether You're a beach bum, a mountain explorer, or a city
                   slicker, we'll help you discover your perfect gateway.
@@ -84,7 +92,7 @@ const Features = () => {
                 <img src={illustration3} />
               </div>
               <div className="TextPart">
-                <h1>Itinerary Magic</h1>
+                <h1 className="head2">Itinerary Magic</h1>
                 <p>
                   Forget the hassle of planning. We craft day-by-day itineraries that match your style, interests and budget
                 </p>
@@ -97,7 +105,7 @@ const Features = () => {
                 <img src={illustration4}/>
               </div>
               <div className='TextPart'>
-              <h1>Budget-Friendly Options</h1>
+              <h1 className="head3">Budget-Friendly Options</h1>
               <p>We beleive great travel doesn't have to break the bank. Explore afforfable trips that don't compromise on experience.</p>
               </div>
             </div>
@@ -108,7 +116,7 @@ const Features = () => {
                 <img src={illustration5}/>
               </div>
               <div className='TextPart'>
-              <h1>Real Traveler Reviews.</h1>
+              <h1 className="head4">Real Traveler Reviews.</h1>
               <p>get insights from fellow travelers who have walked the path before you. Our community is full of helpful tips and honest feedback.</p>
               </div>
             </div>
