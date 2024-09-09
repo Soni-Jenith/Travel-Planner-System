@@ -1,0 +1,219 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .user_account {
+    height: 100vh;
+    overflow: hidden;
+    min-height: fit-content;
+    width: 100%;
+    display: flex;
+  }
+  .user_account .user_profile {
+    min-height: fit-content;
+    height: 100%;
+    width: 35%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+  }
+  .user_account .user_profile #img_div_1,
+  .user_account .user_profile #img_div_2,
+  .user_account .user_profile #img_div_3,
+  .user_account .user_profile #img_div_4 {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 2em;
+    overflow: hidden;
+    background-color: rgb(151, 151, 151);
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+      rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+      rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  }
+  .user_account .user_profile #img_div_2{
+    background-color: lightblue;
+  }
+  .user_account .user_profile #img_div_3{
+    background-color: rgb(195, 60, 225);
+  }
+  .user_account .user_profile #img_div_4{
+    background-color: rgb(68, 235, 102);
+  }
+  
+  
+  .user_account .user_profile img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .user_account .user_profile .alt_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-size: 8em;
+    font-weight: 600;
+    color: rgb(253, 253, 253);
+    font-family: monospace;
+  }
+  
+  .user_account .user_profile .buttons {
+    min-width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: 20px;
+  }
+  .user_account .user_profile .buttons button {
+    background-color: #50c878;
+    border: 0;
+    padding: 5px;
+    font-size: 16px;
+    font-family: monospace;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .user_account .user_profile .user_info {
+    height: 55%;
+    width: 96%;
+    border-radius: 8px;
+  }
+  
+  .user_account .user_name .user_details,
+  .user_account .user_mail,
+  .user_account .user_phone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+  }
+  .user_name{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px ;
+  }
+  .user_name .user_details{
+    width: 90%;
+  }
+  .user_info .user_name img{
+    height: 85%;
+    width: 5%;
+    padding: 2px;
+    cursor: pointer;
+  }
+  .user_name .user_details p,
+  .user_mail p,
+  .user_phone p{
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  
+  .log_out {
+    width: fit-content;
+    padding: 5px 25px 5px 25px;
+    border: 1px solid rgb(111, 110, 110);
+    border-radius: 5px;
+    transition: all 0.9s linear;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: monospace;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .log_out::before {
+    content: "confirm LogOut";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(234, 155, 155);
+    top: 0;
+    left: -100%;
+    font-size: 15px;
+    line-height: 0.9rem;
+    transition: all 0.9s cubic-bezier(0.09, 1.16, 0.56, 0.85);
+  }
+  .log_out:hover {
+    background-color: rgb(234, 155, 155);
+  }
+  .log_out:hover::before {
+    left: 0;
+  }
+  .user_activity {
+    width: 65%;
+    height: 100%;
+    background-color: rebeccapurple;
+  }
+  
+  /* popup box for editing name */
+  .popup {
+    position: fixed;
+    width: 15%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #aba9a9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  .succeess_message{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4caf50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .popup_content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .popup_content h3{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: monospace;
+  }
+  
+  .popup_content input {
+    padding: 8px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif ;
+    border: none;
+    outline: none;
+    background-color: #aba9a9;
+    transition: all 0.5s;
+  }
+  .popup_content input:focus{
+    padding: 8px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif ;
+    border-bottom: 2px solid grey;
+    border-radius: 8px;
+  }
+  
+  .popup_content button {
+    padding: 5px 20px 5px 20px;
+    font-size: 16px;
+    width: 50%;
+    cursor: pointer;
+    align-self: center;
+  }

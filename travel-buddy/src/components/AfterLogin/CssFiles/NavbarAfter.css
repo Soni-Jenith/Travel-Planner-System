@@ -1,7 +1,8 @@
 #navbarAfter {
+    box-sizing: unset;
     position: absolute;
     height: 80px;
-    width: 100%;
+    width: 100vw;
     top: 0;
     left: 0;
     background-color: transparent;
@@ -27,7 +28,7 @@
 }
 
 .nav-links {
-    width: fit-content;
+    width: 50%;
     gap: 20px;
     position: relative;
     display: flex;
@@ -40,6 +41,7 @@
     text-decoration: none;
     color: black;
     cursor: pointer;
+    font-family: "Inknut",sans-serif;
     
 }
 
@@ -49,7 +51,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
+    cursor: pointer; 
 }
 
 .profileContainer #usericon {

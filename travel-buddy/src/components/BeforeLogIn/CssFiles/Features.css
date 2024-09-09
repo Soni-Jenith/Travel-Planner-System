@@ -98,7 +98,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding: 30px;
+    /* padding: 30px; */
     color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 50px 0px rgba(152, 91, 50, 0.449);
@@ -108,6 +108,7 @@
     position: relative;
     height: 100%;
     width: 40%;
+    padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,15 +132,16 @@
     gap: 10px;
     padding: 20px;
   }
-
+  
   .ContentBox .TextPart h1 {
     position: relative;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-wrap: nowrap;
   }
-
+  
   .ContentBox .TextPart p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 40px;
     position: relative;
     text-align: center;
   }

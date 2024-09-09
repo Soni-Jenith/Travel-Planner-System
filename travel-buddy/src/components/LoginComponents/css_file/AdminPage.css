@@ -1,0 +1,467 @@
+
+:root {
+  --main_bg_color: rgb(52, 154, 205);
+  --main_dark_color: rgb(95, 202, 255);
+}
+
+* {
+  font-family: "Inknut",sans-serif;
+}
+nav {
+  height: 60px;
+  width: 100vw;
+  background: var(--main_bg_color);
+  position: absolute;
+  z-index: 1;
+  
+  display: flex;
+  align-items: center;
+  z-index: 13;
+}
+nav .title {
+  margin-left: 20px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: lightcyan;
+  font-weight: 500;
+}
+nav img {
+  height: 55%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  padding-top: 70px;
+  width: 250px; /* Adjust as needed */
+  background-color: #f4f4f4;
+  transition: margin 0.3s ease;
+  z-index: 11;
+}
+aside.visible {
+  margin-left: 0px;
+}
+aside.hidden {
+  margin-left: -250px;
+}
+aside ul {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+aside ul li {
+  list-style-type: none;
+  width: 90%;
+  padding: 10px 0px;
+  padding-left: 10px;
+  margin: 5px 0px;
+  transition: all 0.2s;
+  cursor: pointer;
+  border-radius: 10px;
+}
+aside ul li:hover {
+  background: rgb(173, 222, 247);
+}
+aside ul li.set_as_activity {
+  background: var(--main_dark_color);
+  position: relative;
+}
+
+aside ul li.set_as_activity::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -9px;
+  height: 100%;
+  width: 4px;
+  background: var(--main_dark_color);
+  border-radius: 2px;
+}
+
+.drop_down_menu_con {
+  background: white;
+  position: relative;
+}
+.drop_down_menu_con .drop_down_label {
+  padding: 0px 20px;
+  text-align: center;
+  cursor: default;
+}
+.drop_down_menu_con .drop_down_item_con {
+  position: absolute;
+  top: 104%;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  height: fit-content;
+  border-radius: 0px 0px 8px 8px;
+  overflow: hidden;
+  background: white;
+}
+.drop_down_menu_con .drop_down_item_con.disable_me {
+  display: none;
+}
+
+.drop_down_menu_con .drop_down_item_con .item {
+  height: 100%;
+  width: 100%;
+  background: white;
+  padding-left: 5px;
+  cursor: pointer;
+  text-align: center;
+  padding: 2px 10px 2px 10px;
+  &:hover {
+    background: #4a4a4a47; 
+  }
+}
+
+main {
+  height: 100vh;
+}
+
+main section {
+  background: rgba(202, 226, 237, 0.429);
+  min-height: fit-content;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  padding-top: 70px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  overflow-y:scroll ;
+}
+
+.section_hidden {
+  display: none;
+}
+
+.section_visible {
+  display: flex;
+}
+
+section .sub_nav {
+  width: 100%;
+  height: fit-content;
+  padding: 5px 10px;
+  background: rgba(173, 216, 230, 0.715);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 50px;
+  gap: 25px;
+  margin-top: -10px;
+}
+
+section .sub_nav input {
+  height: 32px;
+  width: 30%;
+  font-size: 15px;
+  padding: 10px 12px 10px 12px;
+  border-radius: 10px;
+  outline: 0;
+  border: 0;
+}
+section .sub_nav input:focus {
+  outline: none;
+  box-shadow: rgba(216, 213, 213, 0.589) 0px 4px 12px;
+  border-bottom:1px solid black;
+}
+
+section .sub_nav .drop_down_label{
+  height: 90%;
+  font-size: 16px;
+  padding: 4px;
+}
+
+section .sub_nav button {
+  cursor: pointer;
+  padding: 4px 8px 4px 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  font-weight: 500;
+  font-size: 16px;
+}
+section .sub_nav button:hover {
+  background-color: aliceblue;
+}
+
+section .sub_nav button:last-child {
+  height: 40px;
+  width: 40px;
+  outline: 0;
+  border: 0;
+  background: transparent;
+}
+section .sub_nav button img {
+  height: 100%;
+}
+
+
+/* data container  */
+
+.data_container {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+}
+.show_data {
+  height: 100%;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  background: rgba(52, 154, 205, 0.547);
+  border-radius: 10px;
+}
+.show_data img {
+  height: 100%;
+}
+.show_data .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  line-height: 30px;
+  text-align: center;
+}
+.show_data .text .static_Text{
+  font-size: 20px;
+  font-weight: 500 ;
+}
+.show_data .text .dynamic_Text{
+  font-size: 18px;
+}
+
+
+
+
+/* src/App.css */
+table {
+  width: 80%;
+  border-collapse: collapse;
+}
+th,td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+tr {
+  cursor: pointer;
+  &:hover{
+    background: rgb(191, 218, 230);
+  }
+}
+td{
+  height: 70px;
+}
+td:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+td button {
+  height: 30px;
+  width: 30px;
+  padding: 2px;
+  cursor: pointer;
+}
+td button img {
+  width: 100%;
+}
+td .operations {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* use with java script animation */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.re_fetch_data_animation {
+  animation: rotate 1s linear;
+}
+
+.set_one_data_table {
+  height: fit-content;
+  width: fit-content;
+  background: rebeccapurple;
+  min-width: 250px;
+  z-index: 999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.set_one_data_table .title {
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 5px 0px;
+  background: var(--main_dark_color);
+}
+.set_one_data_table .user_data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 20px;
+  gap: 30px;
+  font-size: 1.3rem;
+}
+.set_one_data_table .close_button {
+  position: absolute;
+  top: 6px;
+  right: 15px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+.set_one_data_table .close_button img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* htmml form */
+#Admin_page_form {
+  background: rgb(255, 255, 255);
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#Admin_page_form .title {
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 5px 0px;
+  background: lightblue;
+}
+#Admin_page_form .form_data {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
+  gap: 30px;
+  font-size: 1.3rem;
+}
+#Admin_page_form .form_data .NOTE {
+  width: 100%;
+  color: red;
+  font-size: 1.2rem;
+}
+
+#Admin_page_form .form_data div:has(input) {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
+}
+#Admin_page_form .form_data div:has(input) input{
+  border: 0;
+  outline:  0;
+  border-radius: 2px;
+  background-color: #ddd;
+  font-size: 15px;
+  padding: 5px;
+  transition: all;
+  border-bottom: 1px solid transparent;
+}
+#Admin_page_form .form_data div:has(input) input:focus{
+  background-color: #faf4f4;
+  border-bottom: 1px solid #555 ;
+}
+
+#Admin_page_form .form_data div:has(button) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #Admin_page_form .form_data label{
+  
+} */
+
+#Admin_page_form div button {
+  padding: 5px 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  outline: 0;
+  border: 1px solid black;
+  font-size: 1.2rem;
+  width: 150px;
+}
+
+#Admin_page_form .close_button {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+  border-radius: 30px;
+  overflow: hidden;
+}
+#Admin_page_form .close_button img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.set_full_bg {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background: rgba(52, 51, 51, 0.279);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 600;
+  color: white;
+}
+
+.remove_set_full_bg {
+  display: none;
+}

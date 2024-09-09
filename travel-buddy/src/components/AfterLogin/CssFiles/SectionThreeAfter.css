@@ -4,8 +4,10 @@
     position: relative;
     overflow: hidden;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
     background-color: rgb(225, 217, 207);
 }
 
@@ -17,7 +19,15 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
 
+.Sec3Heading {
+    position: relative;
+    text-align: center;
+    font-family: "Inknut",sans-serif;
+    font-size: 1.8rem;
+    color: black;
+    font-weight: bold;
 }
 
 .SubContainer1 {
@@ -29,7 +39,6 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    
 }
 
 .SubContainer2 {
@@ -44,29 +53,71 @@
 }
 
 .SubContainer1 .SubSubContainer1 {
-    position: relative;
-    height: 100%;
     width: 60%;
 }
 
-.SubContainer1 .SubSubContainer2 {
-    position: relative;
+.Sub:hover > .category_overlay {
+    opacity: 1;
+}
+
+.Sub .category_overlay {
+    position: absolute;
+    overflow: hidden;
     height: 100%;
+    width: 100%;
+    display: flex;
+    top: 0;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: left;
+    transition: all 0.7s;
+    opacity: 0;
+}
+
+.Sub .category_overlay .heroTitle:nth-child(1) {
+    position: relative;
+    padding: 0px 10px;
+    font-family: "Inknut",sans-serif;
+    font-size: 1.5rem;
+    line-height: 30px;
+    color: white;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 1%, rgba(0, 0, 0, 0.7) 80%, rgba(0, 0, 0, 0) 100%);
+}
+
+.Sub .category_overlay .heroTitle:nth-child(2) {
+    font-family: "Inknut",sans-serif;
+    position: relative;
+    padding: 0px 10px 10px 10px;
+    font-size: 1rem;
+    color: white;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 1%, rgba(0, 0, 0, 0.7) 80%, rgba(0, 0, 0, 0) 100%);
+    line-height: 25px;
+}
+
+.SubContainer1 .SubSubContainer2 {
     width: 40%;
-   
 }
 
 .SubContainer2 .SubSubContainer3, .SubContainer2 .SubSubContainer4, .SubContainer2 .SubSubContainer5 {
+    width: 34%;
+}
+
+.Sub {
     position: relative;
     height: 100%;
-    width: 34%;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 .Sub img {
     position: relative;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    transition: all 0.7s;
+}
+
+.Sub:hover img {
+    transform: scale(1.1);
 }
 
 
